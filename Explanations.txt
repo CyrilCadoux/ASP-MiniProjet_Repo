@@ -1,0 +1,34 @@
+Gitbook : voir avec Eric pour savoir ce qu'on doit mettre dedans.
+
+
+Intro pitch shifting :
+
+- Motivation
+- Real Time constraint (ask Eric about high pitch shifting in real time) => We approximate real time (not bit by bit)
+- Efficiency : use int numbers and look up tables
+
+
+Robot voice:
+- Explain SIN table
+- Explain direct component and how to remove it
+- Simple modulation
+- (Would it be reasonnable to apply a lowpass on the result)
+
+
+Grain Synthesis:
+- Global Idea
+- Explain resample and why we cannot do it for high pitching
+	(Explain the need of interpolation and LookUp Tables)
+	(Explain that we perform up sampling)
+- Motivate the need of the window
+- Explain why down + up window on the same samples is different than not modifying the samples
+- Explain implementation details (global variables and shared buffers)
+
+LPC:
+-Global Idea does not depend on Grain Systhesis
+- This is not a pitch shifting method. It is only used to make the result seem more natural
+- Explain LPC
+- We perform pitch shifting with GS
+- Explain the implementatin (with fake code) and what differs with the basic GS approach.
+
+

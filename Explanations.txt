@@ -12,7 +12,7 @@ Robot voice:
 - Explain SIN table
 - Explain direct component and how to remove it
 - Simple modulation
-- (Would it be reasonnable to apply a lowpass on the result)
+- Explain the double length buffer for the C/board implementation
 
 
 Grain Synthesis:
